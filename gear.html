@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gear Guide | Badminton Academy</title>
+
+  <link rel="stylesheet" href="CSS/gear.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("bad2.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">Badminton Academy</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="beginner.html">Beginner</a>
+
+    <a href="gear.html" class="active">Gear Guide</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="beginner.html">Beginner</a>
+
+  <a href="gear.html">Gear Guide</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>Gear Guide</h1>
+  <p>เลือกอุปกรณ์ให้เหมาะกับสไตล์การเล่น  
+     เล่นดีขึ้น ไม่เจ็บ ไม่พลาด</p>
+</section>
+
+<!-- ===== CONTENT ===== -->
+<section class="gear">
+  <div class="gear-grid">
+
+    <div class="card">
+      <h3>🏸 ไม้แบดมินตัน</h3>
+      <p>เลือกไม้ตามสไตล์: บุก / รับ / สมดุล  
+         น้ำหนัก ก้านอ่อน–แข็ง มีผลกับเกมมาก</p>
+      <span class="tag">Racket</span>
+      <button onclick="window.location.href='racket.html'">Start</button>
+    </div>
+
+    <div class="card">
+      <h3>🧵 เอ็นแบด</h3>
+      <p>เอ็นตึง = คุมดี  
+         เอ็นหย่อน = แรงดี  
+         เลือกให้เหมาะกับระดับ</p>
+      <span class="tag">String</span>
+      <button onclick="window.location.href='string-lbs.html'">Start</button>
+    </div>
+
+    <div class="card">
+      <h3>👟 รองเท้า</h3>
+      <p>ต้องเกาะพื้นดี ลดแรงกระแทก  
+         ช่วยป้องกันข้อเท้า</p>
+      <span class="tag">Shoes</span>
+      <button onclick="window.location.href='shoes.html'">Start</button>
+    </div>
+
+    <div class="card">
+      <h3>✋ Grip & Accessories</h3>
+      <p>กริปช่วยกันลื่น  
+         ผ้าเช็ดเหงื่อ / สนับเข่า ก็สำคัญ</p>
+      <span class="tag">Accessory</span>
+      <button onclick="window.location.href='accessory.html'">Start</button>
+    </div>
+
+    <div class="card">
+      <h3>💸 งบประมาณ</h3>
+      <p>แนะนำของ  
+         งบน้อย / กลาง / สายจริงจัง</p>
+      <span class="tag">Budget</span>
+      <button onclick="window.location.href='racket-budget.html'">Start</button>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

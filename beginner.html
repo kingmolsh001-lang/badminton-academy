@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training Program | Badminton Academy</title>
+  <link rel="stylesheet" href="CSS/beginner.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+    body {
+      background-image: url("bad7.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<div class="navbar">
+  <div class="logo">Badminton Academy</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="beginner.html">Beginner</a>
+    <a href="gear.html">Gear Guide</a>
+    
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="beginner.html">Beginner</a>
+  <a href="gear.html">Gear Guide</a>
+  
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>ชุดสื่อพื้นฐานแบดมินตันเบื้องต้น</h1>
+  <p>เป็นสิ่งที่สำคัญสำหรับผู้เริ่มต้น</p>
+</section>
+
+<!-- ===== TRAINING CONTENT ===== -->
+<section class="training">
+  <div class="training-grid">
+
+    <div class="card">
+      <h3>1. การจับไม้แบด (Grip)</h3>
+      <p>
+        วิธีจับแบบพื้นฐาน จับ forehand และ backhand ให้มั่นคง
+      </p>
+      <span class="tag">Level: Beginner</span>
+      <button onclick="window.location.href='grip.html'">Start</button>
+    </div>
+
+    <div class="card">
+      <h3>2. ท่ายืนพื้นฐาน</h3>
+      <p>
+        ยืนเตรียมพร้อม การทรงตัว และการเคลื่อนที่ที่ถูกต้อง
+      </p>
+      <span class="tag">Level: Beginner</span>
+      <button onclick="window.location.href='stance.html'">Start</button>
+    </div>
+
+    <div class="card">
+      <h3>3. Footwork เบื้องต้น</h3>
+      <p>
+        ก้าวหน้าหลัง ซ้ายขวา แบบมือใหม่เข้าใจง่าย
+      </p>
+      <span class="tag">Level: Beginner</span>
+      <button onclick="window.location.href='footwork.html'">Start</button>
+    </div>
+
+    <div class="card">
+      <h3>4. โซนในคอร์ต</h3>
+      <p>
+        เรียนรู้ตำแหน่งต่าง ๆ ในคอร์ต และการยืนที่เหมาะสม
+      </p>
+      <span class="tag">Level: Beginner</span>
+    <button onclick="window.location.href='court-zone.html'">Start</button>
+    </div>
+
+    <div class="card">
+      <h3>5. การนับแต้มและกติกาพื้นฐาน</h3>
+      <p>
+        ระบบ 21 แต้ม การเสิร์ฟ และข้อห้ามต่าง ๆ
+      </p>
+      <span class="tag">Level: Beginner</span>
+      <button onclick="window.location.href='rules-score.html'">Start</button>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
